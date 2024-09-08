@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChessCom Maicon</title>
+    <link rel="icon" href="icone.ico" type="Icone da pagina">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="LogoPagina.png" alt="Logo da pagina" class="logoPagina">
+    </header>
+    <main>
+      <section class="campoInput">
+        <div>
+        <input type="text" placeholder="Aberturas, ataques, defesas e mates" class="BarraPesquisa" id="campo-pesquisa">
+        <button class="Botao" onclick="pesquisar()">Pesquisar</button>
+        </div>
+      </section>
+      <section class="resultados-pesquisa" id="resultados-pesquisa">
+      </section>
+    </main>
+<footer>
+<p>♟️Chess com Maicon♟️</p>
+</footer>
+<script src="dados.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

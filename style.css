@@ -1,0 +1,116 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+/* Estiliza o corpo da página */
+body {
+    font-family: "Chakra Petch", sans-serif; /* Define a fonte padrão */
+    background-image: url(Bg.jpeg);
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    background-position: center center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+    height: 100vh; /* Preenche a altura total da viewport */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+}
+.logoPagina {
+    width: 350px;
+    height: auto;
+    position: relative;
+    top: -30px;
+}
+.campoInput {
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Alinha os itens na vertical */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 2rem; /* Espaçamento abaixo de cada seção */
+    position: relative;
+    top: -15px;
+}
+section input, button { /* posiciona a barra de pesquisa e o botão um ao lado do outro */
+    margin: 2.5px; /* O espaço entre a barra de pesquisa e o botão */
+}
+.BarraPesquisa {
+    background-color: #6d6e707c;
+    width: 19.05rem; /* Largura dos inputs */
+    border-color: rgba(46, 112, 255, 0.658);
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 1.5rem; /* Borda arredondada */
+    margin-bottom: 3rem; /* Espaçamento abaixo dos inputs */
+    color: #45474B; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+}
+.Botao {
+    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    border-color: rgba(11, 37, 99, 0.603);
+    border-radius: 0.8rem; /* Borda arredondada */
+    background-color: rgba(10, 54, 148, 0.712); /* Cor de fundo do botão */
+    color: #F5F7F8; /* Cor do texto do botão */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 60rem; /* Largura máxima da caixa de resultados */
+    height: 40vh; /* Altura máxima da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: -4.6rem; /* Espaçamento acima da caixa de resultados */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Borda arredondada */
+}
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #45474B; /* Cor do texto */
+    margin: 0.5rem 0; /* Margem acima e abaixo */
+}
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: #FFFFFF; /* Cor de fundo dos itens */
+    border-radius: 0.6rem; /* Borda arredondada */
+    padding: 1rem; /* Espaçamento interno */
+    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.3); /* Sombra leve */
+}
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    text-align: center;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #222831; /* Cor do texto */
+}
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #5496d8; /* Cor do texto dos links */
+}
+/* Estiliza os links quando são passados o mouse sobre */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}   
+.imagem-resultado {
+    float: right; /* Posiciona a imagem à direita */
+    width: 100px; /* Define a largura da imagem */
+    height: auto; /* Define a altura da imagem */
+    margin-left: 1rem; /* Adiciona um espaço entre a imagem e o texto */
+    background: #6fa2ff2c; /* Cor de fundo dos itens */
+    border-radius: 0.3rem; /* Borda arredondada */
+    padding: 0.5rem; /* Espaçamento interno */
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3); /* Sombra leve */
+}
+/* Estiliza o rodapé da página */
+footer {
+    background-color: rgba(0, 0, 0  , 0.5); /* Cor de fundo do rodapé */
+    color: #ffffff; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 0; /* Espaçamento interno */
+    width: 100%; /* Largura total da página */
+    position: absolute; /* Posiciona o rodapé */
+    bottom: 0; /* Alinha ao fundo da página */
+    font-size: 1rem; /* Tamanho da fonte */
+}
