@@ -20,7 +20,7 @@ campoPesquisa = campoPesquisa.toLowerCase()
             <img src="${dado.imagem}" alt="imagem do resultado" class="imagem-resultado">
                      <h2>${dado.Titulo}</h2>
                      <p class="descricao-meta">${dado.Descricao}</p>
-                     <a href="${dado.Link}" target="_blank">Aprenda no chess.com</a>
+                     <a href="${dado.Link}" target="_blank">Continue vendo no chess.com</a>
                     </div>
             `;
             } 
