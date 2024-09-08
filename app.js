@@ -22,7 +22,16 @@ campoPesquisa = campoPesquisa.toLowerCase()
                      <p class="descricao-meta">${dado.Descricao}</p>
                      <a href="${dado.Link}" target="_blank">Aprenda no chess.com</a>
                     </div>
-            `;} 
+            `;
+            } 
     }
+
+    if (!resultados) {
+        resultados = ""
+        titulo = ""
+        descricao = ""
+        tags = ""
+    }
+
     section.innerHTML = resultados  
 }
